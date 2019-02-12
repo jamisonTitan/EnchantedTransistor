@@ -1,0 +1,83 @@
+#text-box {
+  text-align:center;
+  font-size: 24px;
+  border: 3px solid black;
+  position: relative;
+  margin: auto;
+  width: 70%;
+  height: 80px;
+  overflow-y: auto;
+}
+
+#hud {
+  position: relative;
+  height: 160px;
+  width: 90%;
+  background: black;
+  margin: auto;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#btn-holder {
+  width: 50%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#player-stats {
+  width: 15%;
+  background: black;
+  color: white;
+  font-size:20px;
+}
+
+#player-face-holder {
+  height: 160px;
+  width: 160px;
+  background: fuchsia;
+  display: flex;
+  justify-content: center;
+}
+
+#player-face {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#encounter-img-holder {
+  background: black;
+  position: relative;
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#encounter-img {
+ width:50%;  
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid black;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 22px;
+  height:40px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: grey;
+  text-shadow: 2px 2px #000000;
+}
+
