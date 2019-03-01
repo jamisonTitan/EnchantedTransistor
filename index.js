@@ -975,7 +975,7 @@ const setGameState = function(stateName) {
                   //TODO add health potion
                 })
                 set.btn1('Ok bye now', () => {
-                  setGameState('boss');
+                  setGameState('bossFight');
                 });
               });
             }
@@ -1026,6 +1026,7 @@ const setGameState = function(stateName) {
                 player.potions.push(potions.health);
                 player.potions.push(potions.health);
                 set.btn1('Ok bye now', () => {
+                  set.encounterImg(imgUrls.boss);
                   setGameState('bossFight');
                 });
               });
@@ -1059,7 +1060,7 @@ const setGameState = function(stateName) {
       {
         $('#hud').hide();
         $('#enemy-stats').hide();
-        set.encounter-img('https://image.shutterstock.com/image-vector/you-win-glitch-text-anaglyph-450w-732073129.jpg');
+        set.encounterImg('https://image.shutterstock.com/image-vector/you-win-glitch-text-anaglyph-450w-732073129.jpg');
       }
       break;
   }
@@ -1077,7 +1078,7 @@ $(document).ready( function(){
         player.waterRes = 0;
         player.lightningRes = 0;
         player.potions.push(potions.health);
-        ///player.potions.push(potions.health);
+        //player.potions.push(potions.health);
         //player.potions.push(potions.health);
              player.skills=[
           {
