@@ -691,7 +691,7 @@ const setGameState = function(stateName) {
             {
               let chance = Math.random() * 8; 
               console.log(chance, player.intelligence)
-              if(player.intelligence > chance && enemy.name != 'Scary Boss Monster') {
+              if(player.intelligence > chance) {
                 $(`.weapon-holder`).remove();
                 $('.ability-holder').remove();
                 $('#btn-holder').append(
